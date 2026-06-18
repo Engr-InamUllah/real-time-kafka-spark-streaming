@@ -1,0 +1,19 @@
+name: real-time-kafka-spark-streaming
+owner: Engr-InamUllah
+status: scaffold
+stack: 'Apache Kafka, Spark Structured Streaming, Delta Lake'
+pipeline:
+  - produce
+  - consume
+  - validate
+  - aggregate
+  - checkpoint
+quality_gates:
+  - schema_validation
+  - null_thresholds
+  - duplicate_detection
+  - freshness_check
+  - automated_tests
+security:
+  secrets: environment_or_secret_store
+  least_privilege: true
